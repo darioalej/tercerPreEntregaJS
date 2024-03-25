@@ -1,0 +1,167 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	height: 100vh;
+}
+
+html,body{
+	background-color: #e69900;
+}
+
+body{
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	color: whitesmoke;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	font-family: "Baloo Thambi", cursive;
+    font-weight: 600;
+    font-size: 4rem;  
+}
+
+.container > span{
+	padding-right: 0.5rem;  
+	animation: glow 2s ease-in-out infinite;
+}
+
+.container > span:nth-child(6),
+.container > span:nth-child(8),
+.container > span:nth-child(11) {
+    padding-right: 2rem; 
+}
+
+@keyframes glow{
+	0%, 100%{
+		color: #e69900;
+		text-shadow: 0 0 12px lime, 0 0 50px lime, 0 0 100px lime;
+	}
+	10%, 90%{
+		color: #111;
+		text-shadow: none;
+	}
+}
+
+.container > span:nth-child(1){
+	animation-delay: 0.25s;
+}
+.container > span:nth-child(2){
+	animation-delay: 0.5s;
+}
+.container > span:nth-child(3){
+	animation-delay: 0.75s;
+}
+.container > span:nth-child(4){
+	animation-delay: 1s;
+}
+.container > span:nth-child(5){
+	animation-delay: 1.25s;
+}
+.container > span:nth-child(6){
+	animation-delay: 1.5s;
+}
+.container > span:nth-child(7){
+	animation-delay: 1.75s;
+}
+.container > span:nth-child(8){
+	animation-delay: 2s;
+}
+.container > span:nth-child(9){
+	animation-delay: 2.25s;
+}
+.container > span:nth-child(10){
+	animation-delay: 2.5s;
+}
+.container > span:nth-child(11){
+	animation-delay: 2.75s;
+}
+.container > span:nth-child(12){
+	animation-delay: 3s;
+}
+.container > span:nth-child(13){
+	animation-delay: 3.25s;
+}
+
+h2{
+	margin-top: 2.5vh;
+	color:black;
+}
+
+form{
+	margin-top: 5vh;
+	width: 50%;
+	display: inline-flex;
+	flex-direction: column;
+	color: #ffdd99;
+	font-size: 20px;
+}
+
+label{
+	margin-top: 1vh
+}
+
+input{
+	padding: 1.5%;
+	border-radius: 20px;
+	border: solid black 2px;
+}
+
+input[type='submit']{
+	background-color: #9999ff;
+	color: #ffdd99;
+	font-size: 25px;
+	border: solid black 2px;
+	margin-top: 5vh;
+	transition: 0.5s background-color;
+}
+
+input[type='submit']:hover{
+	background-color: #0000ff;
+	cursor: pointer;
+}
+
+input, div{
+	font-size: 2em;
+	padding: 4px 12px;
+	border-radus: 7px;
+	border: 2px solid darkgray;
+	outline: none;
+}
+
+#mensaje-bienvenida {
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px solid darkgray;
+    margin-top: 20px; 
+    display: none;
+}
+
+		 /* CSS DE NAVE.HTML */
+
+.black{
+	background-color: black;
+}
+.titulo_instruccion{
+	color:  #ffdd99;  
+}
+.instruccion{
+	color: white;
+}
+
+img{
+	position: absolute; /* para que la nave esté en el suelo, con el bottom 0 posicionamos abajo la imagen */
+	bottom:0;
+}
+
+
